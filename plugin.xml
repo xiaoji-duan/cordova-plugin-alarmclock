@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="com.xj.cordova.alarmclock" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
   <name>cordova-plugin-alarmclock</name>
-  <js-module name="cordova-plugin-alarmclock" src="www/cordova-plugin-alarmclock.js">
+  <js-module name="cordova-plugin-alarmclock" src="www/alarmclock.js">
     <clobbers target="cordova.plugins.cordova-plugin-alarmclock" />
   </js-module>
   <platform name="android">
