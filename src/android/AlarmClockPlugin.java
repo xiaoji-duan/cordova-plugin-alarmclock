@@ -75,5 +75,7 @@ public class AlarmClockPlugin extends CordovaPlugin {
       if (intent.resolveActivity(this.cordova.getActivity().getPackageManager()) != null) {
           this.cordova.getActivity().startActivity(intent);
       }
+
+      callbackContext.success(message);
     }
 }

@@ -11,6 +11,7 @@
       </feature>
     </config-file>
     <config-file parent="/*" target="AndroidManifest.xml">
+      <uses-permission android:name="android.permission.SET_ALARM" />
     </config-file>
     <source-file src="src/android/AlarmClockPlugin.java" target-dir="src/com/xj/cordova/alarmclock/AlarmClockPlugin" />
   </platform>
