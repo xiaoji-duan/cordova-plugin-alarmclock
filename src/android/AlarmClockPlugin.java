@@ -10,6 +10,8 @@ import org.json.JSONObject;
 import android.content.Intent;
 import android.provider.AlarmClock;
 import android.net.Uri;
+import java.util.Calendar;
+import java.util.ArrayList;
 
 /**
  * This class echoes a string called from JavaScript.
