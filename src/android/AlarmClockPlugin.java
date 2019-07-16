@@ -27,7 +27,7 @@ public class AlarmClockPlugin extends CordovaPlugin {
         }
         if (action.equals("createAlarmClock")) {
             String message = args.getString(0);
-            this.createAlarmClock(message, callbackContext);
+            this.createAlarmClock(message, args, callbackContext);
             return true;
         }
         return false;
