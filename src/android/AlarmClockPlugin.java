@@ -41,7 +41,7 @@ public class AlarmClockPlugin extends CordovaPlugin {
         }
     }
 
-    private void createAlarmClock(String message, CallbackContext callbackContext) {
+    private void createAlarmClock(String message, JSONArray args, CallbackContext callbackContext) {
       ArrayList<Integer> testDays = new ArrayList<>();
       testDays.add(Calendar.MONDAY);//周一
       testDays.add(Calendar.TUESDAY);//周二
