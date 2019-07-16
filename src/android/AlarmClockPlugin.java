@@ -9,6 +9,7 @@ import org.json.JSONObject;
 
 import android.content.Intent;
 import android.provider.AlarmClock;
+import android.net.Uri;
 
 /**
  * This class echoes a string called from JavaScript.
@@ -44,8 +45,8 @@ public class AlarmClockPlugin extends CordovaPlugin {
       testDays.add(Calendar.TUESDAY);//周二
       testDays.add(Calendar.FRIDAY);//周五
 
-      String packageName = getApplication().getPackageName();
-      Uri ringtoneUri = Uri.parse("android.resource://" + packageName + "/" + resId);
+      String packageName = this.cordova.getActivity().getApplication().getPackageName();
+      //Uri ringtoneUri = Uri.parse("android.resource://" + packageName + "/" + resId);
 
       int hour = 13, minutes = 0;
 
